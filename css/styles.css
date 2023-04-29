@@ -10,7 +10,7 @@
 */
 
 /* Reset */
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -26,9 +26,28 @@ ul {
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
     text-decoration: none;
-    color: inherit;
+    color: rgb(15, 125, 158);    
 }
-
+.flex-container{
+        display:flex;
+        justify-content:center;
+        width: 15%;
+        margin: 10;
+        padding: 20;
+        font-family: "Tahoma";
+        font-size: 10px;
+}
+#contenidos{
+    text-align: center; color: rgb(15, 125, 158);
+    font-size:16px;
+    font-family: "Tahoma";
+    margin:auto;
+}
+#contenidos1{
+    text-align:justify; color:black;
+    line-height: 1.5;font-size:14px;
+    font-family: "Tahoma"
+}
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
