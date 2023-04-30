@@ -10,9 +10,8 @@
 */
 
 body{
-    font-size: 18px;
-    max-width: 1200px;
-    margin: auto;
+    display: block;
+    margin: 10px;
 }
 /* Reset */
 *{
@@ -24,37 +23,46 @@ body{
 /* Para quitar los puntos a los items de listas */
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
-a {
-    text-decoration: none;
-    color: rgb(15, 125, 158);    
-}
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     height: 90px;
-    text-align: center;
-    justify-content: center;
-    max-width: 100%;
-    padding: auto;
-    margin: 0 auto;
-}
-ul{
-    cursor: pointer;
+    z-index: 1;
+    text-align: center; color: rgb(15, 125, 158);
+    list-style: none;
 }
 nav{
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+li,a{
+    list-style: none;
+    position: relative;
     font-family: "Tahoma";
-    height: 90px;
+    text-decoration: none;
+    margin: 0 15px;
+    color: rgb(15, 125, 158);
+    font-weight: bold;
     font-size: 18px;
-    text-align: center;
-    padding: 20px 20px;
-    margin: 0 auto;
-    left: 0;
+}
+header a{
+    cursor: pointer;
 }
 h1{
     text-align: center; color: rgb(15, 125, 158);
     font: size 36px;
     font-family: "Tahoma";
-    margin:auto;
+    margin:0;
+    padding: auto 50px;
 }
 #contenidos{
     text-align:justify; color:black;
@@ -73,12 +81,15 @@ h1{
     height: 40px;
     text-align: center;
     padding: auto;
+    list-style: none;
 }
 h6{
     color: #fbfbfb;
     font-family: "Verdana";
     font-size: 20px;
-    line-height: 1.6em;
+    line-height: 0;
+    margin: 0;
+    padding: 0;    
 }
 #contenidos2{
     text-align: center;
@@ -118,13 +129,10 @@ main{
     
 }
 .imagen{
-    display: block;
+    display: flex;
     border-radius: 400px;
-    margin: 0 auto;
-    padding: 40px;
-}
-.logo{
-    left: 0;
+    margin: 50px auto;
+    padding: 30px;
 }
 footer{
     height: 90px;
@@ -133,7 +141,7 @@ footer{
     max-width: 100%;
     display: flex;
     justify-content: center;
-    font-family: "Tohama";
+    font-family: "Verdana";
     padding: 40px;
     font-size: 18px;
 }
