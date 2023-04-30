@@ -34,6 +34,8 @@ header{
     text-align: center;
     justify-content: center;
     max-width: 100%;
+    padding: auto;
+    margin: 0 auto;
 }
 ul{
     cursor: pointer;
@@ -44,9 +46,9 @@ nav{
     height: 90px;
     font-size: 18px;
     text-align: center;
-    left: 0;
     padding: 20px 20px;
-    margin: 10px;
+    margin: 0 auto;
+    left: 0;
 }
 h1{
     text-align: center; color: rgb(15, 125, 158);
@@ -110,9 +112,10 @@ h6{
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
-main {
-    max-width: 1200px;
+main{
     margin: auto;
+    min-height: 100vh;
+    
 }
 .imagen{
     display: block;
@@ -121,7 +124,7 @@ main {
     padding: 40px;
 }
 .logo{
-    padding: auto;
+    left: 0;
 }
 footer{
     height: 90px;
