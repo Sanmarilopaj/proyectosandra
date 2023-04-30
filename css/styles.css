@@ -9,44 +9,103 @@
 *  cuyos valores asigna por defecto el navegador.
 */
 
+body{
+    font-size: 18px;
+    max-width: 1200px;
+    margin: auto;
+}
 /* Reset */
 *{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
 }
-
 /* Para quitar los puntos a los items de listas */
-ul {
-    list-style: none;
-}
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
     text-decoration: none;
     color: rgb(15, 125, 158);    
 }
-.flex-container{
-        display:flex;
-        justify-content:center;
-        width: 15%;
-        margin: 10;
-        padding: 20;
-        font-family: "Tahoma";
-        font-size: 10px;
+header{
+    display: flex;
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
 }
-#contenidos{
+ul{
+    cursor: pointer;
+}
+nav{
+    position: fixed;
+    font-family: "Tahoma";
+    height: 90px;
+    font-size: 18px;
+    text-align: center;
+    left: 0;
+    padding: 20px 20px;
+    margin: 10px;
+}
+h1{
     text-align: center; color: rgb(15, 125, 158);
-    font-size:16px;
+    font: size 36px;
     font-family: "Tahoma";
     margin:auto;
 }
-#contenidos1{
+#contenidos{
     text-align:justify; color:black;
-    line-height: 1.5;font-size:14px;
-    font-family: "Tahoma"
+    line-height: 1.2;font: size 28px;
+    font-family: "Tahoma";
+    margin: auto;
+}
+.caja{
+    background-color: #48a1ca;
+    justify-content: center;
+    border-radius: 20px;
+    margin: auto;
+    display: flexbox; 
+    flex-flow: row wrap;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    padding: auto;
+}
+h6{
+    color: #fbfbfb;
+    font-family: "Verdana";
+    font-size: 20px;
+    line-height: 1.6em;
+}
+#contenidos2{
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-family: "Verdana";
+    margin:auto;
+    line-height: 1.2em;
+    padding: 0 auto;
+}
+.caja1{
+    border: 2px solid rgb(15, 125, 158);
+    background-color: rgb(132, 213, 238);
+    width: 320px;
+    height: 180px;
+    display: flexbox;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+.contacto{
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: auto;
+    line-height: 1.6em;
+    padding: auto;
 }
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
@@ -55,7 +114,26 @@ main {
     max-width: 1200px;
     margin: auto;
 }
-
+.imagen{
+    display: block;
+    border-radius: 400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.logo{
+    padding: auto;
+}
+footer{
+    height: 90px;
+    background: #278cbb; color: #fbfbfb;
+    text-align:center;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Tohama";
+    padding: 40px;
+    font-size: 18px;
+}
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
