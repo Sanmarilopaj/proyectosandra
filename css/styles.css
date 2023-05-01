@@ -13,6 +13,23 @@ body{
     display: block;
     margin: 10px;
 }
+.contenedor{
+    width: 80%;
+    min-width: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+@media screen and (max-width:800px){
+    main{
+        width: 100%;
+    }    
+}
+@media screen and (max-width:400px){
+    .contenedor{
+        width: 100%;
+    }
+}
 /* Reset */
 *{
     box-sizing: border-box;
@@ -26,11 +43,11 @@ body{
 header{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 75%;
     display: flex;
     justify-content: space-around;
     height: 90px;
-    z-index: 1;
+    z-index: 10;
     text-align: center; color: rgb(15, 125, 158);
     list-style: none;
 }
@@ -38,6 +55,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 120px;
 }
 ul{
     position: relative;
@@ -49,7 +67,7 @@ li,a{
     position: relative;
     font-family: "Tahoma";
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 50px;
     color: rgb(15, 125, 158);
     font-weight: bold;
     font-size: 18px;
@@ -61,7 +79,7 @@ h1{
     text-align: center; color: rgb(15, 125, 158);
     font: size 36px;
     font-family: "Tahoma";
-    margin:0;
+    margin: 50px;
     padding: auto 50px;
 }
 #contenidos{
@@ -72,14 +90,14 @@ h1{
 }
 .caja{
     background-color: #48a1ca;
-    justify-content: center;
+    justify-content: justify;
+    text-align: center;
     border-radius: 20px;
-    margin: auto;
+    margin: 100px auto;
     display: flexbox; 
     flex-flow: row wrap;
     width: 350px;
     height: 40px;
-    text-align: center;
     padding: auto;
     list-style: none;
 }
@@ -88,8 +106,9 @@ h6{
     font-family: "Verdana";
     font-size: 20px;
     line-height: 0;
-    margin: 0;
-    padding: 0;    
+    margin: auto;
+    padding: auto;
+    text-align: center;    
 }
 #contenidos2{
     text-align: center;
@@ -97,7 +116,7 @@ h6{
     color: black;
     font-size: 18px;
     font-family: "Verdana";
-    margin:auto;
+    margin: auto;;
     line-height: 1.2em;
     padding: 0 auto;
 }
@@ -109,30 +128,32 @@ h6{
     display: flexbox;
     justify-content: center;
     margin: auto;
-    padding: auto;
+    padding: 0;
     text-align: center;
 }
 .contacto{
     text-align: center;
     justify-content: center;
     flex-flow: row wrap;
-    margin: auto;
-    line-height: 1.6em;
-    padding: auto;
+    margin: 20px auto;
+    padding: 30px;
 }
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
 main{
     margin: auto;
-    min-height: 100vh;
-    
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .imagen{
     display: flex;
     border-radius: 400px;
     margin: 50px auto;
     padding: 30px;
+    width: 50%;
+    height: auto;
 }
 footer{
     height: 90px;
